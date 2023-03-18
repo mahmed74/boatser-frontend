@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.bg-theme{
+  background-color: #092143;
+}
+.text-theme{
+  color: #092143;
+}
+*{
+  font-family: 'Roboto', sans-serif!important;
+}
+.font-extrabold{
+  font-weight: 900;
+}
+.swiper-button-prev{
+  color: #fff!important;
+}
+.swiper-button-next{
+  color: #fff!important;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+.paypal-button-tagline{
+  visibility: hidden!important;
+  display: none!important;
+}
+.cart > span {
+  background-color: rgb(199, 0, 0);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 10px;
+  margin-left: 30px;
+  letter-spacing: 0.1rem;
+}
+.noscroll{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.comin{
+  animation: animin 0.3s linear;
+}
+.comout{
+  animation: animout 0.3s linear forwards;
+}
+
+
+html{
+  scroll-behavior: smooth!important;
+}
+
+canvas { position: absolute }
+
+.wrapper {
+  margin: 50px auto;
+  max-width: 980px;
+}
+
+section.all-sliders {
+  width: 100%;
+  float: left;
+}
+
+.slidecontainer {
+  width: 50%;
+  float: left;
+  margin: 80px 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #c4bfff;
+  outline: none;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #655ecf;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #655ecf;
+  cursor: pointer;
+}
+
+
+.first { width: 50% }
+.first span { color: #655ecf }
+.first .slider::-webkit-slider-thumb { background: #655ecf }
+.first .slider { background: #c4bfff }
+
+.second { width: 30% }
+.second span { color: #eb3992 }
+.second .slider::-webkit-slider-thumb { background: #eb3992 }
+.second .slider { background: #ff7ebe }
+
+.third { width: 60% }
+.third span { color: #14bd3e }
+.third .slider::-webkit-slider-thumb { background: #14bd3e }
+.third .slider { background: #6feb8e }
+
+.fourth { width: 20% }
+.fourth span { color: #395aeb }
+.fourth .slider::-webkit-slider-thumb { background: #395aeb }
+.fourth .slider { background: #718afa }
+
+
+
+
+.loaded{
+  display: flex;
+ animation: vanish 0.5s linear forwards;
+}
+
+@keyframes vanish {
+  0%{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  100%{
+    opacity: 0;
+    display: none!important;
+    visibility: hidden
+  }
+}
+
+@keyframes animin {
+  0%{
+    margin-left: 20px;
+    opacity: 0;
+  }
+  100%{
+    margin-left: 5px;
+    opacity: 1;
+    display: flex;
+  }
+}
+@keyframes animout {
+  0%{
+    margin-left: 5px;
+    opacity: 1;
+  }
+  100%{
+    margin-left: 20px;
+    opacity: 0;
+    display: none;
+  }
+}
